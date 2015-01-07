@@ -74,9 +74,13 @@ function initializeNavMenuItem() {
     });
 }
 
-function initializeRequestButton() {
+function initializeRequestButton(filter) {
+    if (!filter) {
+        filter = '[ztn-request]';
+    }
+
     // Button action
-    $('[ztn-request]').on('click', function (e) {
+    $(filter).on('click', function (e) {
         var $this = $(this);
         var url = $this.attr('ztn-href');
         var target = $this.attr('ztn-target');
@@ -95,7 +99,7 @@ function initializeRequestButton() {
                 }
             });
         }).fail(function () {
-            setErrorMessage('The request to web service failed (<a href="' + getWebServiceUrl() + '">' + getWebServiceUrl() + '</a>).');
+            setErrorMessage('The request to web service failed (<a href="' + getWebServiceUrl() + url + '">' + getWebServiceUrl() + url + '</a>).');
         });
 
         return false
@@ -109,7 +113,7 @@ function initializeSolarSystemViewRequest() {
         var target = $this.attr('ztn-target');
         var template = $this.attr('ztn-template');
 
-        setErrorMessage('Solar system view is yet not implemented.');
+        setErrorMessage('Solar system view is not yet implemented.');
 
         return false
     });
