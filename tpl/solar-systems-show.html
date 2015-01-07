@@ -1,0 +1,23 @@
+<h1>
+    <span class="label label-primary">Solar Systems</span>
+</h1>
+
+<div id="targetId"></div>
+
+<table class="table table-striped">
+    <thead>
+    <tr>
+        <th>Id</th>
+        <th>System name</th>
+    </tr>
+    </thead>
+    <tbody id="solar-systems-container"></tbody>
+</table>
+
+<button type="button" class="btn btn-primary"
+        ztn-request="solar-systems" ztn-href="solarsystem/byname" ztn-target="#solar-systems-container"
+        ztn-template="tpl/ships-row.html">
+    Fetch all known systems
+</button>
+
+<script type="application/javascript">initializeRequestButton();</script>

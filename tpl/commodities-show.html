@@ -1,0 +1,21 @@
+<h1>
+    <span class="label label-primary">Commodities</span>
+</h1>
+
+<table class="table table-striped">
+    <thead>
+    <tr>
+        <th>Category Id</th>
+        <th>Name</th>
+    </tr>
+    </thead>
+    <tbody id="commodities-container"></tbody>
+</table>
+
+<button type="button" class="btn btn-primary"
+        ztn-request="ships" ztn-href="goods/designations" ztn-target="#commodities-container"
+        ztn-template="tpl/commodities-row.html">
+    Fetch all known commodities
+</button>
+
+<script type="application/javascript">initializeRequestButton();</script>
