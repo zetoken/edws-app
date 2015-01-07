@@ -7,28 +7,68 @@ function setWebServiceUrl(url) {
 }
 
 function getWebServiceUrl() {
+    var defaultUrl = "http://localhost:8080/";
     var webServiceUrl = localStorage.getItem("web-service-url");
     if (!webServiceUrl) {
-        setWebServiceUrl("http://localhost:8080/")
-        webServiceUrl = "http://localhost:8080/";
+        setWebServiceUrl(defaultUrl);
+        webServiceUrl = defaultUrl;
     }
     return webServiceUrl;
 }
 
-function initializeNavMenuItem() {
-    // Tab toggle
-    $('body .navbar a').click(function (e) {
-        e.preventDefault()
-        $(this).tab('show')
-    })
+function setErrorMessage(message) {
+    if (message) {
+        setErrorMessageTemplate('#error-template', {message: message});
+    }
+    else {
+        $('#messages-container').empty();
+    }
+}
 
+function setErrorMessageTemplate(template, data) {
+    if (template) {
+        $('#messages-container').loadTemplate(template, data);
+    }
+    else {
+        $('#messages-container').empty();
+    }
+}
+
+function initializeApplication() {
+    $('#elite-container').loadTemplate('tpl/getting-started.html');
+
+    $.addTemplateFormatter({
+        integer: function (value, template) {
+            if (!value || value == 0) {
+                return '';
+            }
+            return numeral(value).format('0,0');
+        },
+        float: function (value, template) {
+            if (!value || value == 0) {
+                return '';
+            }
+            return numeral(value).format('0,0.00');
+        }
+    });
+}
+
+function initializeNavMenuItem() {
     // Item action
     $('[ztn-nav-item]').on('click', function (e) {
         var $this = $(this);
         var target = $this.attr('ztn-target');
         var template = $this.attr('ztn-template');
 
+        // Load template
         $(target).loadTemplate(template, {});
+
+        // Tab toggle
+        e.preventDefault()
+        $(this).tab('show')
+
+        // Remove error messages
+        setErrorMessage(null);
 
         return false
     });
@@ -46,10 +86,30 @@ function initializeRequestButton() {
             type: "GET", url: getWebServiceUrl() + url, dataType: "json"
         }).done(function (data) {
             console.log(data);
-            $(target).loadTemplate(template, data);
+            // Remove error messages
+            setErrorMessage(null);
+            // Load template
+            $(target).loadTemplate(template, data, {
+                success: function () {
+                    initializeSolarSystemViewRequest();
+                }
+            });
         }).fail(function () {
-            alert("An error occurred");
+            setErrorMessage('The request to web service failed (<a href="' + getWebServiceUrl() + '">' + getWebServiceUrl() + '</a>).');
         });
+
+        return false
+    });
+}
+
+function initializeSolarSystemViewRequest() {
+    $('[ztn-system-id]').on('click', function (e) {
+        var $this = $(this);
+        var url = $this.attr('ztn-href');
+        var target = $this.attr('ztn-target');
+        var template = $this.attr('ztn-template');
+
+        setErrorMessage('Solar system view is yet not implemented.');
 
         return false
     });

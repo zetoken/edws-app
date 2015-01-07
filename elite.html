@@ -11,6 +11,7 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.loadTemplate.min.js"></script>
     <script src="js/elite-dangerous.js"></script>
+    <script src="js/numeral.min.js"></script>
 </head>
 <body>
 
@@ -29,37 +30,45 @@
         <nav class="collapse navbar-collapse bs-navbar-collapse">
             <ul class="nav navbar-nav">
                 <li class="active">
-                    <a href="#">Getting started</a>
+                    <a href="#" ztn-nav-item=true ztn-target="#elite-container" ztn-template="tpl/getting-started.html">Getting started</a>
                 </li>
                 <li>
-                    <a href="#" ztn-nav-item=true ztn-target="#elite-container"
-                       ztn-template="tpl/solar-systems-show.html">
+                    <a href="#" ztn-nav-item=true ztn-target="#elite-container" ztn-template="tpl/solar-systems-show.html">
                         Solar systems
                     </a>
                 </li>
                 <li>
-                    <a href="#" ztn-nav-item=true ztn-target="#elite-container"
-                       ztn-template="tpl/shipyard-show.html">
+                    <a href="#" ztn-nav-item=true ztn-target="#elite-container" ztn-template="tpl/shipyard-show.html">
                         Shipyard
                     </a>
                 </li>
                 <li>
-                    <a href="#" ztn-nav-item=true ztn-target="#elite-container"
-                       ztn-template="tpl/commodities-show.html">
+                    <a href="#" ztn-nav-item=true ztn-target="#elite-container" ztn-template="tpl/commodities-show.html">
                         Commodities
                     </a>
                 </li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="">Contact</a></li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
             </ul>
         </nav>
     </div>
 </header>
 
+<script type="text/html" id="error-template">
+    <div class="alert alert-danger" role="alert" data-content="message"></div>
+</script>
+
+<div id="messages-container" class="container theme-showcase" role="contentinfo"></div>
+
 <div id="elite-container" class="container theme-showcase" role="main"></div>
 
-<script type="application/javascript">initializeNavMenuItem();</script>
+<script type="application/javascript">
+    initializeApplication();
+    initializeNavMenuItem();
+</script>
 
 </body>
 </html>

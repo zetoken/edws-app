@@ -7,8 +7,8 @@
 <table class="table table-striped">
     <thead>
     <tr>
-        <th>Id</th>
         <th>System name</th>
+        <th>Number of known stations</th>
     </tr>
     </thead>
     <tbody id="solar-systems-container"></tbody>
@@ -16,8 +16,10 @@
 
 <button type="button" class="btn btn-primary"
         ztn-request="solar-systems" ztn-href="solarsystem/byname" ztn-target="#solar-systems-container"
-        ztn-template="tpl/ships-row.html">
+        ztn-template="tpl/solar-systems-row.html">
     Fetch all known systems
 </button>
 
-<script type="application/javascript">initializeRequestButton();</script>
+<script type="application/javascript">
+    initializeRequestButton();
+</script>
