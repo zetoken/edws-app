@@ -1,5 +1,5 @@
 /**
- * Created by Sylvain on 05/01/2015.
+ * Created by ZTn on 05/01/2015.
  */
 
 function setWebServiceUrl(url) {
@@ -36,6 +36,7 @@ function setErrorMessageTemplate(template, data) {
 
 function initializeApplication() {
     $('#elite-container').loadTemplate('tpl/getting-started.html');
+    $('.web-service-url').html('<a href="' + getWebServiceUrl() + '">' + getWebServiceUrl() + '</a>');
 
     $.addTemplateFormatter({
         integer: function (value, template) {
@@ -53,9 +54,9 @@ function initializeApplication() {
     });
 }
 
-function initializeNavMenuItem() {
+function initializeNavMenuItem(target) {
     // Item action
-    $('[ztn-nav-item]').on('click', function (e) {
+    $(target).on('click', function (e) {
         var $this = $(this);
         var target = $this.attr('ztn-target');
         var template = $this.attr('ztn-template');

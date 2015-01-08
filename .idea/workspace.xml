@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2c552800-eb8c-446e-89dc-83d4eafc4233" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/commodities-show.html" afterPath="$PROJECT_DIR$/tpl/commodities-show.html" />
+    <list default="true" id="2c552800-eb8c-446e-89dc-83d4eafc4233" name="Default" comment="- initializeRequestButton(...) function signature updated">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/elite-dangerous.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/elite-dangerous.js" afterPath="$PROJECT_DIR$/js/elite-dangerous.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/shipyard-show.html" afterPath="$PROJECT_DIR$/tpl/shipyard-show.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/elite.html" afterPath="$PROJECT_DIR$/elite.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/solar-systems-row.html" afterPath="$PROJECT_DIR$/tpl/solar-systems-row.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/solar-systems-show.html" afterPath="$PROJECT_DIR$/tpl/solar-systems-show.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -31,71 +32,7 @@
     <favorites_list name="Elite Dangerous Bootstrap" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="elite-dangerous.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/elite-dangerous.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="884">
-              <caret line="101" column="135" selection-start-line="101" selection-start-column="135" selection-end-line="101" selection-end-column="135" />
-              <folding>
-                <element signature="n#!!doc;n#setWebServiceUrl#0" expanded="false" />
-                <element signature="n#!!block;n#setWebServiceUrl#0" expanded="false" />
-                <element signature="n#!!block;n#getWebServiceUrl#0" expanded="false" />
-                <element signature="n#!!block;n#setErrorMessage#0" expanded="false" />
-                <element signature="n#!!block;n#setErrorMessageTemplate#0" expanded="false" />
-                <element signature="n#!!block;n#initializeApplication#0" expanded="false" />
-                <element signature="n#!!block;n#initializeNavMenuItem#0" expanded="false" />
-                <element signature="n#!!block;n#initializeSolarSystemViewRequest#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="shipyard-show.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tpl/shipyard-show.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.6153846" vertical-offset="0" max-vertical-offset="544">
-              <caret line="4" column="45" selection-start-line="4" selection-start-column="34" selection-end-line="4" selection-end-column="45" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="solar-systems-show.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tpl/solar-systems-show.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.9230769" vertical-offset="0" max-vertical-offset="510">
-              <caret line="6" column="45" selection-start-line="6" selection-start-column="45" selection-end-line="6" selection-end-column="45" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="commodities-show.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/tpl/commodities-show.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.12014134" vertical-offset="0" max-vertical-offset="566">
-              <caret line="4" column="45" selection-start-line="4" selection-start-column="45" selection-end-line="4" selection-end-column="45" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="elite.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/elite.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.1923075" vertical-offset="0" max-vertical-offset="459">
-              <caret line="63" column="17" selection-start-line="63" selection-start-column="17" selection-end-line="63" selection-end-column="17" />
-              <folding>
-                <element signature="n#head#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -122,12 +59,13 @@
         <option value="$PROJECT_DIR$/Examples/index.html" />
         <option value="$PROJECT_DIR$/tpl/ships-row.html" />
         <option value="$PROJECT_DIR$/tpl/commodities-row.html" />
-        <option value="$PROJECT_DIR$/elite.html" />
-        <option value="$PROJECT_DIR$/tpl/solar-systems-row.html" />
-        <option value="$PROJECT_DIR$/js/elite-dangerous.js" />
         <option value="$PROJECT_DIR$/tpl/shipyard-show.html" />
-        <option value="$PROJECT_DIR$/tpl/solar-systems-show.html" />
         <option value="$PROJECT_DIR$/tpl/commodities-show.html" />
+        <option value="$PROJECT_DIR$/tpl/solar-systems-row.html" />
+        <option value="$PROJECT_DIR$/css/elite-dangerous.css" />
+        <option value="$PROJECT_DIR$/tpl/solar-systems-show.html" />
+        <option value="$PROJECT_DIR$/elite.html" />
+        <option value="$PROJECT_DIR$/js/elite-dangerous.js" />
       </list>
     </option>
   </component>
@@ -199,6 +137,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Elite Dangerous Bootstrap" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Elite Dangerous Bootstrap" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -218,6 +170,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/Examples/index.html" />
     <property name="restartRequiresConfirmation" value="true" />
     <property name="LayoutCode.rearrangeEntriesHTML" value="false" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -505,7 +458,8 @@
       <workItem from="1420482511624" duration="39588000" />
       <workItem from="1420612889885" duration="200000" />
       <workItem from="1420624491853" duration="13000" />
-      <workItem from="1420640015380" duration="20346000" />
+      <workItem from="1420640015380" duration="20546000" />
+      <workItem from="1420701812379" duration="11501000" />
     </task>
     <task id="LOCAL-00001" summary="- NumeralJS script added.&#10;- Some data-format added in templates&#10; - Attributes &quot;ztn-system-id&quot;, &quot;ztn-ship-id&quot; and &quot;ztn-commodity-id&quot; added.">
       <created>1420669621997</created>
@@ -513,11 +467,17 @@
       <option name="project" value="LOCAL" />
       <updated>1420669621997</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="- initializeRequestButton(...) function signature updated">
+      <created>1420671658627</created>
+      <option name="number" value="00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1420671658627</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="62896000" />
+    <option name="totallyTimeSpent" value="74597000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -526,21 +486,20 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32900432" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32900432" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32864866" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32900432" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32864866" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -549,6 +508,7 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32900432" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -568,11 +528,12 @@
       <TodoPanelSettings />
     </option>
     <MESSAGE value="- NumeralJS script added.&#10;- Some data-format added in templates&#10; - Attributes &quot;ztn-system-id&quot;, &quot;ztn-ship-id&quot; and &quot;ztn-commodity-id&quot; added." />
-    <option name="LAST_COMMIT_MESSAGE" value="- NumeralJS script added.&#10;- Some data-format added in templates&#10; - Attributes &quot;ztn-system-id&quot;, &quot;ztn-ship-id&quot; and &quot;ztn-commodity-id&quot; added." />
+    <MESSAGE value="- initializeRequestButton(...) function signature updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="- initializeRequestButton(...) function signature updated" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="4" />
+      <option name="time" value="5" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -581,6 +542,24 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/js/elite-dangerous.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="374">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc;n#setWebServiceUrl#0" expanded="false" />
+            <element signature="n#!!block;n#setWebServiceUrl#0" expanded="false" />
+            <element signature="n#!!block;n#getWebServiceUrl#0" expanded="false" />
+            <element signature="n#!!block;n#setErrorMessage#0" expanded="false" />
+            <element signature="n#!!block;n#setErrorMessageTemplate#0" expanded="false" />
+            <element signature="n#!!block;n#initializeApplication#0" expanded="false" />
+            <element signature="n#!!block;n#initializeNavMenuItem#0" expanded="false" />
+            <element signature="n#!!block;n#initializeRequestButton#0" expanded="false" />
+            <element signature="n#!!block;n#initializeSolarSystemViewRequest#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/js/elite-dangerous.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="84" max-vertical-offset="1003">
@@ -593,6 +572,7 @@
             <element signature="n#!!block;n#setErrorMessageTemplate#0" expanded="false" />
             <element signature="n#!!block;n#initializeApplication#0" expanded="false" />
             <element signature="n#!!block;n#initializeNavMenuItem#0" expanded="false" />
+            <element signature="n#!!block;n#initializeRequestButton#0" expanded="false" />
             <element signature="n#!!block;n#initializeSolarSystemViewRequest#0" expanded="false" />
           </folding>
         </state>
@@ -604,7 +584,7 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="n#head#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#script#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
@@ -622,6 +602,7 @@
             <element signature="n#!!block;n#setErrorMessageTemplate#0" expanded="false" />
             <element signature="n#!!block;n#initializeApplication#0" expanded="false" />
             <element signature="n#!!block;n#initializeNavMenuItem#0" expanded="false" />
+            <element signature="n#!!block;n#initializeRequestButton#0" expanded="false" />
             <element signature="n#!!block;n#initializeSolarSystemViewRequest#0" expanded="false" />
           </folding>
         </state>
@@ -633,7 +614,7 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="n#head#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#script#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
@@ -651,6 +632,7 @@
             <element signature="n#!!block;n#setErrorMessageTemplate#0" expanded="false" />
             <element signature="n#!!block;n#initializeApplication#0" expanded="false" />
             <element signature="n#!!block;n#initializeNavMenuItem#0" expanded="false" />
+            <element signature="n#!!block;n#initializeRequestButton#0" expanded="false" />
             <element signature="n#!!block;n#initializeSolarSystemViewRequest#0" expanded="false" />
           </folding>
         </state>
@@ -662,7 +644,7 @@
           <caret line="11" column="57" selection-start-line="11" selection-start-column="57" selection-end-line="11" selection-end-column="57" />
           <folding>
             <element signature="n#head#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#script#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
@@ -680,6 +662,7 @@
             <element signature="n#!!block;n#setErrorMessageTemplate#0" expanded="false" />
             <element signature="n#!!block;n#initializeApplication#0" expanded="false" />
             <element signature="n#!!block;n#initializeNavMenuItem#0" expanded="false" />
+            <element signature="n#!!block;n#initializeRequestButton#0" expanded="false" />
             <element signature="n#!!block;n#initializeSolarSystemViewRequest#0" expanded="false" />
           </folding>
         </state>
@@ -697,6 +680,7 @@
             <element signature="n#!!block;n#setErrorMessageTemplate#0" expanded="false" />
             <element signature="n#!!block;n#initializeApplication#0" expanded="false" />
             <element signature="n#!!block;n#initializeNavMenuItem#0" expanded="false" />
+            <element signature="n#!!block;n#initializeRequestButton#0" expanded="false" />
             <element signature="n#!!block;n#initializeSolarSystemViewRequest#0" expanded="false" />
           </folding>
         </state>
@@ -714,6 +698,7 @@
             <element signature="n#!!block;n#setErrorMessageTemplate#0" expanded="false" />
             <element signature="n#!!block;n#initializeApplication#0" expanded="false" />
             <element signature="n#!!block;n#initializeNavMenuItem#0" expanded="false" />
+            <element signature="n#!!block;n#initializeRequestButton#0" expanded="false" />
             <element signature="n#!!block;n#initializeSolarSystemViewRequest#0" expanded="false" />
           </folding>
         </state>
@@ -727,13 +712,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/bootstrap-theme.css.map">
-      <provider editor-type-id="sourcemapFileViewerProvider">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="876">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
+      </provider>
+      <provider editor-type-id="sourcemapFileViewerProvider">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/bootstrap.js">
@@ -761,9 +746,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="883">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -779,7 +761,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="566">
           <caret line="0" column="53" selection-start-line="0" selection-start-column="53" selection-end-line="0" selection-end-column="53" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -791,22 +772,55 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/tpl/commodities-show.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.12014134" vertical-offset="0" max-vertical-offset="566">
+          <caret line="4" column="45" selection-start-line="4" selection-start-column="45" selection-end-line="4" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpl/shipyard-show.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.119929455" vertical-offset="0" max-vertical-offset="567">
+          <caret line="4" column="45" selection-start-line="4" selection-start-column="34" selection-end-line="4" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/elite-dangerous.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.11467116" vertical-offset="0" max-vertical-offset="593">
+          <caret line="4" column="23" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpl/solar-systems-row.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.08994709" vertical-offset="0" max-vertical-offset="567">
+          <caret line="3" column="37" selection-start-line="3" selection-start-column="37" selection-end-line="3" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/elite.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.1923075" vertical-offset="0" max-vertical-offset="459">
-          <caret line="63" column="17" selection-start-line="63" selection-start-column="17" selection-end-line="63" selection-end-column="17" />
+        <state vertical-scroll-proportion="0.5097002" vertical-offset="0" max-vertical-offset="567">
+          <caret line="79" column="42" selection-start-line="79" selection-start-column="42" selection-end-line="79" selection-end-column="42" />
           <folding>
             <element signature="n#head#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#script#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#footer#0;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/elite-dangerous.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="884">
-          <caret line="101" column="135" selection-start-line="101" selection-start-column="135" selection-end-line="101" selection-end-column="135" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="593">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="n#!!doc;n#setWebServiceUrl#0" expanded="false" />
             <element signature="n#!!block;n#setWebServiceUrl#0" expanded="false" />
@@ -815,40 +829,20 @@
             <element signature="n#!!block;n#setErrorMessageTemplate#0" expanded="false" />
             <element signature="n#!!block;n#initializeApplication#0" expanded="false" />
             <element signature="n#!!block;n#initializeNavMenuItem#0" expanded="false" />
+            <element signature="n#!!block;n#initializeRequestButton#0" expanded="false" />
             <element signature="n#!!block;n#initializeSolarSystemViewRequest#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tpl/solar-systems-row.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.06007067" vertical-offset="0" max-vertical-offset="566">
-          <caret line="2" column="39" selection-start-line="2" selection-start-column="39" selection-end-line="2" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tpl/shipyard-show.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.6153846" vertical-offset="0" max-vertical-offset="544">
-          <caret line="4" column="45" selection-start-line="4" selection-start-column="34" selection-end-line="4" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tpl/solar-systems-show.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.9230769" vertical-offset="0" max-vertical-offset="510">
-          <caret line="6" column="45" selection-start-line="6" selection-start-column="45" selection-end-line="6" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tpl/commodities-show.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.12014134" vertical-offset="0" max-vertical-offset="566">
-          <caret line="4" column="45" selection-start-line="4" selection-start-column="45" selection-end-line="4" selection-end-column="45" />
-          <folding />
+        <state vertical-scroll-proportion="0.079422385" vertical-offset="160" max-vertical-offset="714">
+          <caret line="12" column="10" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="10" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
