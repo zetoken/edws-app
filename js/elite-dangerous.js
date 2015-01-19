@@ -107,6 +107,51 @@ function initializeRequestButton(filter) {
     });
 }
 
+function setRequestEvent(filter, eventName) {
+    $(filter).on(eventName, function (e) {
+        var $this = $(this);
+        var url = $this.attr('ztn-href');
+        var target = $this.attr('ztn-target');
+        var template = $this.attr('ztn-template');
+
+        $.ajax({
+            type: "GET", url: getWebServiceUrl() + url, dataType: "json"
+        }).done(function (data) {
+            console.log(data);
+            // Remove error messages
+            setErrorMessage(null);
+            // Load template
+            $(target).loadTemplate(template, data, {
+                success: function () {
+                    initializeSolarSystemViewRequest();
+                }
+            });
+        }).fail(function () {
+            setErrorMessage('The request to web service failed (<a href="' + getWebServiceUrl() + url + '">' + getWebServiceUrl() + url + '</a>).');
+        });
+
+        return false
+    });
+}
+
+function initializeRequestButton(filter) {
+    if (!filter) {
+        filter = 'button [ztn-request]';
+    }
+
+    // Button action
+    setRequestEvent(filter, 'click');
+}
+
+function initializeRequestInput(filter) {
+    if (!filter) {
+        filter = 'input [ztn-request]';
+    }
+
+    // Button action
+    setRequestEvent(filter, 'enter');
+}
+
 function initializeSolarSystemViewRequest() {
     $('[ztn-system-id]').on('click', function (e) {
         var $this = $(this);

@@ -2,6 +2,24 @@
     <span class="label label-primary">Ships</span>
 </h1>
 
+<div class="row">
+    <div class="col-md-4 col-xs-4 col-sm-4">
+        <div class="input-group input-group-sm pull-left searchBox" style="width:95%;">
+            <span class="input-group-addon" style="width:15px;">
+                <i class="glyphicon glyphicon-search" aria-hidden="true"></i>
+            </span>
+            <input class="form-control" placeholder="Enter sub string to find in ship names." type="search">
+        </div>
+    </div>
+    <div class="col-md-8 col-xs-8 col-sm-8 text-right">
+        <button type="button" class="btn btn-primary"
+                ztn-request="ships" ztn-href="ship/buyables" ztn-target="#ships-container"
+                ztn-template="tpl/ships-row.html">
+            Fetch all known ships
+        </button>
+    </div>
+</div>
+
 <table class="table table-striped table-hover">
     <thead>
     <tr>
@@ -11,16 +29,12 @@
         <th>Min range</th>
         <th>Max range</th>
         <th>Slots</th>
+        <th></th>
+        <th></th>
     </tr>
     </thead>
     <tbody id="ships-container"></tbody>
 </table>
-
-<button type="button" class="btn btn-primary"
-        ztn-request="ships" ztn-href="ship/buyables" ztn-target="#ships-container"
-        ztn-template="tpl/ships-row.html">
-    Fetch all known ships
-</button>
 
 <script type="application/javascript">
     initializeRequestButton('[ztn-request="ships"]');
