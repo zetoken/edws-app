@@ -9,14 +9,14 @@
                 <i class="glyphicon glyphicon-search" aria-hidden="true"></i>
             </span>
             <input id="systemName" type="search" class="form-control" placeholder="System name"
-                   ztn-request="solar-systems" ztn-href="solarsystem/byname?name={name}" ztn-params="{ id:'name', ref:'#systemName' }" ztn-target="#solar-systems-container"
-                   ztn-template="tpl/solar-systems-row.html"/>
+                   ztn-request="solar-systems" ztn-href="solarsystem/byname?name={name}" ztn-params="{ id:'name', ref:'#systemName' }"
+                   ztn-target="#solar-systems-container" ztn-template="tpl/solar-systems-row.html"/>
         </div>
     </div>
     <div class="col-md-4 col-xs-4 col-sm-4 text-right">
         <button type="button" class="btn btn-primary"
-                ztn-request="solar-systems" ztn-href="solarsystem/byname?name={name}" ztn-params="{ id:'name', ref:'#systemName' }"  ztn-target="#solar-systems-container"
-                ztn-template="tpl/solar-systems-row.html">
+                ztn-request="solar-systems" ztn-href="solarsystem/byname?name={name}" ztn-params="{ id:'name', ref:'#systemName' }"
+                ztn-target="#solar-systems-container" ztn-template="tpl/solar-systems-row.html">
             Search
         </button>
     </div>
@@ -26,8 +26,11 @@
     <thead>
     <tr>
         <th>System name</th>
-        <th>Number of known stations</th>
+        <th>Known stations</th>
         <th></th>
+        <th>X</th>
+        <th>Y</th>
+        <th>Z</th>
         <th></th>
         <th></th>
     </tr>
@@ -37,6 +40,6 @@
 
 
 <script type="application/javascript">
-    initializeRequestButton('[ztn-request="solar-systems"]');
-    initializeRequestInput('[ztn-request="solar-systems"]');
+    initializeRequestButton('button[ztn-request="solar-systems"]');
+    initializeRequestInput('input[ztn-request="solar-systems"]');
 </script>

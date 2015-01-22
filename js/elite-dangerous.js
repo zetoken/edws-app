@@ -194,7 +194,7 @@ function setRequestEvent(filter, eventName) {
 
 function initializeRequestButton(filter) {
     if (!filter) {
-        filter = 'button [ztn-request]';
+        filter = 'button[ztn-request]';
     }
 
     // Button action
@@ -203,12 +203,13 @@ function initializeRequestButton(filter) {
 
 function initializeRequestInput(filter) {
     if (!filter) {
-        filter = 'input [ztn-request]';
+        filter = 'input[ztn-request]';
     }
 
     $(filter).on('keypress', function (e) {
         if (e.keyCode == 13) {
-            $(this).trigger("enter");
+            console.log("!!!!!");
+            $(this).trigger('enter');
         }
     });
 
