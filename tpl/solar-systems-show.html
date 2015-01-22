@@ -3,21 +3,21 @@
 </h1>
 
 <div class="row">
-    <div class="col-md-4 col-xs-4 col-sm-4">
+    <div class="col-md-8 col-xs-8 col-sm-8">
         <div class="input-group input-group-sm pull-left searchBox" style="width:95%;">
             <span class="input-group-addon" style="width:15px;">
                 <i class="glyphicon glyphicon-search" aria-hidden="true"></i>
             </span>
-            <input class="form-control" placeholder="Enter sub string to find in system names." type="search"
-                   ztn-input="solar-systems" ztn-href="solarsystem/byname" ztn-params="{}" ztn-target="#solar-systems-container"
+            <input id="systemName" type="search" class="form-control" placeholder="System name"
+                   ztn-request="solar-systems" ztn-href="solarsystem/byname?name={name}" ztn-params="{ id:'name', ref:'#systemName' }" ztn-target="#solar-systems-container"
                    ztn-template="tpl/solar-systems-row.html"/>
         </div>
     </div>
-    <div class="col-md-8 col-xs-8 col-sm-8 text-right">
+    <div class="col-md-4 col-xs-4 col-sm-4 text-right">
         <button type="button" class="btn btn-primary"
-                ztn-request="solar-systems" ztn-href="solarsystem/byname" ztn-params="{}" ztn-target="#solar-systems-container"
+                ztn-request="solar-systems" ztn-href="solarsystem/byname?name={name}" ztn-params="{ id:'name', ref:'#systemName' }"  ztn-target="#solar-systems-container"
                 ztn-template="tpl/solar-systems-row.html">
-            Fetch all known systems
+            Search
         </button>
     </div>
 </div>
@@ -38,4 +38,5 @@
 
 <script type="application/javascript">
     initializeRequestButton('[ztn-request="solar-systems"]');
+    initializeRequestInput('[ztn-request="solar-systems"]');
 </script>
