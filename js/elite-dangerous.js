@@ -71,25 +71,27 @@ function initializeApplication() {
     });
 
     // Load categories
+    const categoriesUrl = getWebServiceUrl() + "goods/categories";
     $.ajax({
-        type: "GET", url: getWebServiceUrl() + "goods/categories", dataType: "json"
+        type: "GET", url: categoriesUrl, dataType: "json"
     }).done(function (data) {
         console.log(data);
         allCategories = data;
         localStorage.setItem('categories', JSON.stringify(data));
     }).fail(function () {
-        setErrorMessage('The request to web service failed (<a href="' + getWebServiceUrl() + url + '">' + getWebServiceUrl() + url + '</a>).');
+        setErrorMessage('The request to web service failed (<a href="' + categoriesUrl + '">' + categoriesUrl + '</a>).');
     });
 
     // Load goods
+    const goodsUrl = getWebServiceUrl() + "goods/designations";
     $.ajax({
-        type: "GET", url: getWebServiceUrl() + "goods/designations", dataType: "json"
+        type: "GET", url: goodsUrl, dataType: "json"
     }).done(function (data) {
         console.log(data);
         allGoods = data;
         localStorage.setItem('goods', JSON.stringify(data));
     }).fail(function () {
-        setErrorMessage('The request to web service failed (<a href="' + getWebServiceUrl() + url + '">' + getWebServiceUrl() + url + '</a>).');
+        setErrorMessage('The request to web service failed (<a href="' + goodsUrl + '">' + goodsUrl + '</a>).');
     });
 }
 
@@ -114,39 +116,29 @@ function initializeNavMenuItem(target) {
     });
 }
 
-/*
- function initializeRequestButton(filter) {
- if (!filter) {
- filter = '[ztn-request]';
- }
+function initializeSettings() {
+    const webServiceUrlInput = $('#settings-web-service-url');
+    const settingsSaveButton = $('#settings-save');
 
- // Button action
- $(filter).on('click', function (e) {
- var $this = $(this);
- var url = $this.attr('ztn-href');
- var target = $this.attr('ztn-target');
- var template = $this.attr('ztn-template');
+    webServiceUrlInput.val(getWebServiceUrl());
 
- $.ajax({
- type: "GET", url: getWebServiceUrl() + url, dataType: "json"
- }).done(function (data) {
- console.log(data);
- // Remove error messages
- setErrorMessage(null);
- // Load template
- $(target).loadTemplate(template, data, {
- success: function () {
- initializeSolarSystemViewRequest();
- }
- });
- }).fail(function () {
- setErrorMessage('The request to web service failed (<a href="' + getWebServiceUrl() + url + '">' + getWebServiceUrl() + url + '</a>).');
- });
+    webServiceUrlInput.on('keypress', function (e) {
+        if (e.keyCode == 13) {
+            $(this).trigger('enter');
+        }
+    });
+    webServiceUrlInput.on('enter', function (e) {
+        settingsSaveButton.removeClass('disabled');
+    });
 
- return false
- });
- }
- */
+    settingsSaveButton.on('click', function (e) {
+        setWebServiceUrl(webServiceUrlInput.val());
+        settingsSaveButton.addClass('disabled');
+        // Update web service url references
+        $('.web-service-url').html(getWebServiceUrl());
+        setErrorMessage();
+    })
+}
 
 function setRequestEvent(filter, eventName) {
     $(filter).on(eventName, function (e) {
@@ -208,7 +200,6 @@ function initializeRequestInput(filter) {
 
     $(filter).on('keypress', function (e) {
         if (e.keyCode == 13) {
-            console.log("!!!!!");
             $(this).trigger('enter');
         }
     });

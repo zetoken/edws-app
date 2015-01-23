@@ -52,7 +52,7 @@
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li>
-                    <a href="#">Contact</a>
+                    <a href="#" data-toggle="modal" data-target="#app-settings-modal">Settings</a>
                 </li>
             </ul>
         </nav>
@@ -67,6 +67,28 @@
 
 <div id="elite-container" class="container theme-showcase" role="main"></div>
 
+<!-- Modal Settings UI -->
+<div class="modal fade" id="app-settings-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">EDWS App Settings</h4>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label for="settings-web-service-url">Web service URL</label>
+                    <input id="settings-web-service-url" type="url" class="form-control" placeholder="Enter URL">
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button id="settings-save" type="button" class="btn btn-primary disabled">Save</button>
+            </div>
+        </div>
+    </div>
+</div>
+
 <footer class="footer edws-footer" role="contentinfo">
     <div class="container">
         <div>Web service hosted at <span class="web-service-url"></span></div>
@@ -79,6 +101,7 @@
 <script type="application/javascript">
     initializeApplication();
     initializeNavMenuItem('[ztn-nav-item]');
+    initializeSettings();
 </script>
 
 </body>
